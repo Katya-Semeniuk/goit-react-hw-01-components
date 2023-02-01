@@ -1,0 +1,25 @@
+
+// export default function changedColor({ isOnline }) {
+//   const colorEl = document.getElementById('online')
+//     if (isOnline)
+//         return colorEl.style.backgroundColor = 'red';  
+// }
+
+// export const changedColor = ({ isOnline }) => {
+//     const colorEl = document.getElementById('online')
+//     if (isOnline)
+//         return colorEl.style.backgroundColor = 'red';
+// }
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+export default getRandomHexColor
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+// }
+
+// return body.style.backgroundColor = color
